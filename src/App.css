@@ -1,3 +1,67 @@
 .App {
-  text-align: center;
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  height: 100vh;
+  align-items: stretch;
+  background-color: black;
+  color: white;
+  font-family: 'Nunito', sans-serif;;
 }
+
+/*Selector*/
+#macro-selector {
+  width: 40%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.select-type-wrapper{
+  margin: 10px;
+}
+
+/*Viewer-Editor*/
+#viewer-editor {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  display: flex;
+  width: 60%;
+}
+
+#macro-viewer {
+  height: 30%;
+}
+
+#editor {
+  height: 100%;
+}
+
+#copy-viewer {
+  margin: 0 auto;
+  align-self: center;
+}
+
+
+textarea {
+  margin: 0;
+  resize: none;
+  width: 95%;
+  margin: 3px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  padding: 10px;
+  font-size: 10px;
+}
+
+/*General*/
+h5 {
+  margin: 3px;
+  font-size: 15px;
+}
+
+h2 {
+  margin: 0;
+}
+
