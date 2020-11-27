@@ -35,16 +35,16 @@ class App extends React.Component {
     return(
     <div className="App">
       <div id="macro-selector">
-        <h2>Macros</h2>
+        <div id="title-wrapper">Macro Selector - ES</div>
         {renderMacros("General", this.state.macros.general, this.handleSelect)}
         {renderMacros("Proof of Ownership", this.state.macros.poo, this.handleSelect)}
         {renderMacros("PPN Modules", this.state.macros.ppn, this.handleSelect)}
       </div>
       <div id="viewer-editor">
-        <h5>Macro Viewer</h5>
+        <div><h5>Macro Viewer</h5></div>
         <textarea id="macro-viewer" onChange={this.handleEditViewer} value={this.state.selected} />
         <CopyToClipboard id="copy-viewer" text={this.state.selected}><button>Copy to clipboard</button></CopyToClipboard>
-        <h5>E-mail Editor</h5>
+        <h5 id="title">E-mail Editor</h5>
         <textarea id="editor" onChange={this.handleEditEditor} placeholder="Create your e-mail here..."/>
         <CopyToClipboard id="copy-viewer" text={this.state.contents}><button>Copy to clipboard</button></CopyToClipboard>
       </div>
