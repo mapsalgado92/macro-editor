@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/macro-editor/static/css/main.beefbddf.chunk.css",
+    "main.css": "/macro-editor/static/css/main.ec4d95b7.chunk.css",
     "main.js": "/macro-editor/static/js/main.46cc3aee.chunk.js",
     "main.js.map": "/macro-editor/static/js/main.46cc3aee.chunk.js.map",
     "runtime-main.js": "/macro-editor/static/js/runtime-main.3ccbfd5c.js",
@@ -8,13 +8,13 @@
     "static/js/2.3e7254b6.chunk.js": "/macro-editor/static/js/2.3e7254b6.chunk.js",
     "static/js/2.3e7254b6.chunk.js.map": "/macro-editor/static/js/2.3e7254b6.chunk.js.map",
     "index.html": "/macro-editor/index.html",
-    "static/css/main.beefbddf.chunk.css.map": "/macro-editor/static/css/main.beefbddf.chunk.css.map",
+    "static/css/main.ec4d95b7.chunk.css.map": "/macro-editor/static/css/main.ec4d95b7.chunk.css.map",
     "static/js/2.3e7254b6.chunk.js.LICENSE.txt": "/macro-editor/static/js/2.3e7254b6.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.3ccbfd5c.js",
     "static/js/2.3e7254b6.chunk.js",
-    "static/css/main.beefbddf.chunk.css",
+    "static/css/main.ec4d95b7.chunk.css",
     "static/js/main.46cc3aee.chunk.js"
   ]
 }
