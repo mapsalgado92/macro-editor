@@ -1,4 +1,11 @@
 .select-button{
     margin: 2px;
     padding: 0px 5px;
+    font-size: 15px;
+    font-family: 'Baloo Chettan 2', cursive;
+    border-radius: 5px;
+}
+
+.select-button:focus {
+    background-color: red;
 }
