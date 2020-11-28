@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/macro-editor/static/css/main.b1e79080.chunk.css",
-    "main.js": "/macro-editor/static/js/main.3d06ae4c.chunk.js",
-    "main.js.map": "/macro-editor/static/js/main.3d06ae4c.chunk.js.map",
+    "main.css": "/macro-editor/static/css/main.7e8360fd.chunk.css",
+    "main.js": "/macro-editor/static/js/main.781c005e.chunk.js",
+    "main.js.map": "/macro-editor/static/js/main.781c005e.chunk.js.map",
     "runtime-main.js": "/macro-editor/static/js/runtime-main.3ccbfd5c.js",
     "runtime-main.js.map": "/macro-editor/static/js/runtime-main.3ccbfd5c.js.map",
     "static/js/2.3e7254b6.chunk.js": "/macro-editor/static/js/2.3e7254b6.chunk.js",
     "static/js/2.3e7254b6.chunk.js.map": "/macro-editor/static/js/2.3e7254b6.chunk.js.map",
     "index.html": "/macro-editor/index.html",
-    "static/css/main.b1e79080.chunk.css.map": "/macro-editor/static/css/main.b1e79080.chunk.css.map",
+    "static/css/main.7e8360fd.chunk.css.map": "/macro-editor/static/css/main.7e8360fd.chunk.css.map",
     "static/js/2.3e7254b6.chunk.js.LICENSE.txt": "/macro-editor/static/js/2.3e7254b6.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.3ccbfd5c.js",
     "static/js/2.3e7254b6.chunk.js",
-    "static/css/main.b1e79080.chunk.css",
-    "static/js/main.3d06ae4c.chunk.js"
+    "static/css/main.7e8360fd.chunk.css",
+    "static/js/main.781c005e.chunk.js"
   ]
 }
