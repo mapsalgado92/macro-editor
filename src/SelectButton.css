@@ -9,7 +9,3 @@
 .select-button:focus {
     background-color: red;
 }
-
-.select-button:hover {
-    background-color: rgb(235, 103, 103)(212, 211, 211);
-}
