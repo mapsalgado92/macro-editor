@@ -43,10 +43,10 @@ class App extends React.Component {
       <div id="viewer-editor">
         <div><h5>Macro Viewer</h5></div>
         <textarea id="macro-viewer" onChange={this.handleEditViewer} value={this.state.selected} />
-        <CopyToClipboard id="copy-viewer" text={this.state.selected}><button>Copy to clipboard</button></CopyToClipboard>
+        <CopyToClipboard id="copy-viewer" className="copy-button" text={this.state.selected}><button>Copy Macro Viewer</button></CopyToClipboard>
         <h5 id="title">E-mail Editor</h5>
         <textarea id="editor" onChange={this.handleEditEditor} placeholder="Create your e-mail here..."/>
-        <CopyToClipboard id="copy-viewer" text={this.state.contents}><button>Copy to clipboard</button></CopyToClipboard>
+        <CopyToClipboard id="copy-editor" className="copy-button" text={this.state.contents}><button>Copy E-mail Editor</button></CopyToClipboard>
       </div>
     </div>
     )

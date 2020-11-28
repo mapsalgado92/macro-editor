@@ -10,6 +10,14 @@
 }
 
 /*Selector*/
+#title-wrapper {
+  margin: -20px;
+  padding: 20px;
+  font-size: 40px;
+  width: 100%;
+  text-align: center;
+}
+
 #macro-selector {
   width: 40%;
   padding: 10px;
@@ -38,9 +46,16 @@
   height: 100%;
 }
 
-#copy-viewer {
+.copy-button {
   margin: 0 auto;
-  align-self: center;
+  padding: 0px 10px;
+  font-size: 15px;
+  font-family: 'Baloo Chettan 2', cursive;
+  border-radius: 5px;
+}
+
+.copy-button:hover {
+  background-color: rgb(236, 196, 17);
 }
 
 
@@ -59,13 +74,5 @@ textarea {
 h5 {
   margin: 3px;
   font-size: 20px;
-}
-
-#title-wrapper {
-  margin: -20px;
-  padding: 20px;
-  font-size: 40px;
-  width: 100%;
-  text-align: center;
 }
 
