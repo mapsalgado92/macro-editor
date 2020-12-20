@@ -58,6 +58,10 @@
   background-color: rgb(236, 196, 17);
 }
 
+.language-select {
+  width: fit-content;
+}
+
 
 textarea {
   margin: 0;

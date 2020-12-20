@@ -1,7 +1,7 @@
 import React from 'react';
 import SelectButton from './SelectButton';
 import './App.css';
-import { macrosGen, macrosPoo, macrosPpn} from './macros.js';
+import * as macrosES from './macrosES.js';
 import {CopyToClipboard} from 'react-copy-to-clipboard';
 
 class App extends React.Component {
@@ -9,12 +9,12 @@ class App extends React.Component {
     super(props);
     this.state ={
       language: "ES",
-      selected: 'Here you will see your macros',
+      selected: "",
       contents: "",
       macros: {
-        general: macrosGen,
-        poo: macrosPoo,
-        ppn: macrosPpn
+        general: macrosES.macrosGen,
+        poo: macrosES.macrosPoo,
+        ppn: macrosES.macrosPpn
       }
     }
   }
@@ -31,11 +31,34 @@ class App extends React.Component {
     this.setState({selected: e.target.value})
   }
 
+  handleChangeLanguage = (lang) => {
+    let newMacros = {};
+    switch (lang) {
+      case "ES":
+        newMacros = {
+          general: macrosES.macrosGen,
+          poo: macrosES.macrosPoo,
+          ppn: macrosES.macrosPpn};
+          break;
+      case "PT":
+        newMacros = {
+          general: macrosES.macrosGen,
+          poo: macrosES.macrosPoo,
+          ppn: macrosES.macrosPpn
+        };
+        break;
+      default: break;
+    }
+    this.setState({language: lang, macros: newMacros})
+  }
+
   render () {
     return(
     <div className="App">
       <div id="macro-selector">
-        <div id="title-wrapper">Macro Selector - ES</div>
+        <div id="title-wrapper">Macro Selector{" - " + this.state.language}</div>
+        <button onClick={()=>this.handleChangeLanguage("ES")}>ES</button>
+        <button onClick={()=>this.handleChangeLanguage("PT")}>PT</button>
         {renderMacros("General", this.state.macros.general, this.handleSelect)}
         {renderMacros("Proof of Ownership", this.state.macros.poo, this.handleSelect)}
         {renderMacros("PPN Modules", this.state.macros.ppn, this.handleSelect)}
@@ -45,7 +68,7 @@ class App extends React.Component {
         <textarea id="macro-viewer" onChange={this.handleEditViewer} value={this.state.selected} />
         <CopyToClipboard id="copy-viewer" className="copy-button" text={this.state.selected}><button>Copy Macro Viewer</button></CopyToClipboard>
         <h5 id="title">E-mail Editor</h5>
-        <textarea id="editor" onChange={this.handleEditEditor} placeholder="Create your e-mail here..."/>
+        <textarea id="editor" onChange={this.handleEditEditor} placeholder="Compose your e-mail here..."/>
         <CopyToClipboard id="copy-editor" className="copy-button" text={this.state.contents}><button>Copy E-mail Editor</button></CopyToClipboard>
       </div>
     </div>
