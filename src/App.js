@@ -2,6 +2,7 @@ import React from 'react';
 import SelectButton from './SelectButton';
 import './App.css';
 import * as macrosES from './macrosES.js';
+import * as macrosPT from './macrosPT.js'
 import {CopyToClipboard} from 'react-copy-to-clipboard';
 
 class App extends React.Component {
@@ -42,11 +43,17 @@ class App extends React.Component {
           break;
       case "PT":
         newMacros = {
-          general: macrosES.macrosGen,
-          poo: macrosES.macrosPoo,
+          general: macrosPT.macrosGen,
+          poo: [],
           ppn: macrosES.macrosPpn
         };
         break;
+      case "EN":
+        newMacros = {
+          general: macrosES.macrosGen,
+          poo: [],
+          ppn:macrosES.macrosPpn
+        }
       default: break;
     }
     this.setState({language: lang, macros: newMacros})
@@ -59,6 +66,7 @@ class App extends React.Component {
         <div id="title-wrapper">Macro Selector{" - " + this.state.language}</div>
         <button onClick={()=>this.handleChangeLanguage("ES")}>ES</button>
         <button onClick={()=>this.handleChangeLanguage("PT")}>PT</button>
+        <button onClick={()=>this.handleChangeLanguage("EN")}>PT</button>
         {renderMacros("General", this.state.macros.general, this.handleSelect)}
         {renderMacros("Proof of Ownership", this.state.macros.poo, this.handleSelect)}
         {renderMacros("PPN Modules", this.state.macros.ppn, this.handleSelect)}
