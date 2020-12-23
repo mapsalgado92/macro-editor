@@ -50,7 +50,7 @@ class App extends React.Component {
         break;
       case "EN":
         newMacros = {
-          general: macrosES.macrosGen,
+          general: [],
           poo: [],
           ppn:macrosES.macrosPpn
         }
@@ -64,9 +64,11 @@ class App extends React.Component {
     <div className="App">
       <div id="macro-selector">
         <div id="title-wrapper">Macro Selector{" - " + this.state.language}</div>
-        <button onClick={()=>this.handleChangeLanguage("ES")}>ES</button>
-        <button onClick={()=>this.handleChangeLanguage("PT")}>PT</button>
-        <button onClick={()=>this.handleChangeLanguage("EN")}>EN</button>
+        <div id="lang-selector">
+          <button className="lang-button" onClick={()=>this.handleChangeLanguage("ES")}>ES</button>
+          <button className="lang-button" onClick={()=>this.handleChangeLanguage("PT")}>PT</button>
+          <button className="lang-button" onClick={()=>this.handleChangeLanguage("EN")}>EN</button>
+        </div>
         {renderMacros("General", this.state.macros.general, this.handleSelect)}
         {renderMacros("Proof of Ownership", this.state.macros.poo, this.handleSelect)}
         {renderMacros("PPN Modules", this.state.macros.ppn, this.handleSelect)}

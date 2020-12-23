@@ -6,7 +6,7 @@
   align-items: stretch;
   background-color: black;
   color: white;
-  font-family: 'Baloo Chettan 2', cursive;;
+  font-family: 'Baloo Chettan 2', cursive;
 }
 
 /*Selector*/
@@ -25,9 +25,29 @@
   flex-direction: column;
 }
 
+#lang-selector {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lang-button {
+  font-family: 'Baloo Chettan 2', cursive;
+  font-size: 17px;
+  color: white;
+  width: 20%;
+  border: solid 3px white;
+  border-radius: 10px;
+  background-color: black;
+  margin: 0px 1em;
+  
+
+}
+
 .select-type-wrapper{
   margin: 10px;
 }
+
 
 /*Viewer-Editor*/
 #viewer-editor {
