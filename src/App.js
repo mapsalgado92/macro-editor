@@ -44,7 +44,7 @@ class App extends React.Component {
       case "PT":
         newMacros = {
           general: macrosPT.macrosGen,
-          poo: [],
+          poo: macrosPT.macrosPoo,
           ppn: macrosES.macrosPpn
         };
         break;
