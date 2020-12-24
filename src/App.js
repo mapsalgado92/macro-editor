@@ -2,7 +2,8 @@ import React from 'react';
 import SelectButton from './SelectButton';
 import './App.css';
 import * as macrosES from './macrosES.js';
-import * as macrosPT from './macrosPT.js'
+import * as macrosPT from './macrosPT.js';
+import * as macrosEN from './macrosEN.js';
 import {CopyToClipboard} from 'react-copy-to-clipboard';
 
 class App extends React.Component {
@@ -50,10 +51,11 @@ class App extends React.Component {
         break;
       case "EN":
         newMacros = {
-          general: [],
+          general: macrosEN.macrosGen.macrosGen,
           poo: [],
           ppn:macrosES.macrosPpn
         }
+        break;
       default: break;
     }
     this.setState({language: lang, macros: newMacros})
