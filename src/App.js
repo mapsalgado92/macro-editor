@@ -102,6 +102,6 @@ const renderMacros = (typeStr, macros, hFunc) => {
     </div>
   )
 }*/
-
+console.log("What an awsome editor")
 
 export default App;
