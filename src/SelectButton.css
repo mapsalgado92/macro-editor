@@ -1,7 +1,8 @@
 .select-button{
-    margin: 2px;
-    padding: 0px 5px;
+    margin: 3px;
+    padding: 2px 4px;
     font-size: 15px;
+    font-weight: bold;
     font-family: 'Baloo Chettan 2', cursive;
     border-radius: 5px;
 }
