@@ -5,6 +5,7 @@ import * as macrosES from './macrosES.js';
 import * as macrosPT from './macrosPT.js';
 import * as macrosEN from './macrosEN.js';
 import * as macrosDE from './macrosDE.js';
+import * as macrosFR from './macrosFR.js';
 import {CopyToClipboard} from 'react-copy-to-clipboard';
 
 class App extends React.Component {
@@ -63,6 +64,14 @@ class App extends React.Component {
           poo: macrosDE.macrosPoo,
           ppn: macrosES.macrosPpn
         }
+        break
+      case "FR":
+        newMacros = {
+          general: [],
+          poo: macrosFR.macrosPoo,
+          ppn: macrosES.macrosPpn
+        }
+        break
       default: break;
     }
     this.setState({language: lang, macros: newMacros})
@@ -78,6 +87,7 @@ class App extends React.Component {
           <button className="lang-button" onClick={()=>this.handleChangeLanguage("PT")}>PT</button>
           <button className="lang-button" onClick={()=>this.handleChangeLanguage("EN")}>EN</button>
           <button className="lang-button" onClick={()=>this.handleChangeLanguage("DE")}>DE</button>
+          <button className="lang-button" onClick={()=>this.handleChangeLanguage("FR")}>FR</button>
         </div>
         {renderMacros("General", this.state.macros.general, this.handleSelect)}
         {renderMacros("Proof of Ownership", this.state.macros.poo, this.handleSelect)}
