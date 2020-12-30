@@ -38,7 +38,7 @@ export const macrosPoo = [
 
 export const macrosPpn = [
     {title: "Missing information", text: "https://ppn.porsche.com/portal/docs/DOC-128901"},
-    {title: "Frist reminder", text: "https://ppn.porsche.com/portal/docs/DOC-146910"},
+    {title: "First reminder", text: "https://ppn.porsche.com/portal/docs/DOC-146910"},
     {title: "Second reminder", text: "https://ppn.porsche.com/portal/docs/DOC-146932"},
     {title: "Non-European market", text: "https://ppn.porsche.com/portal/docs/DOC-320813"}
 ]
