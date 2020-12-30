@@ -107,12 +107,16 @@ class App extends React.Component {
 }
 
 const renderMacros = (typeStr, macros, hFunc) => {
-  return(
-    <div id={typeStr} className={"select-type-wrapper"}>
-      <h5>{typeStr}</h5>
-      <div className={"select-wrapper"}>{macros.map((macro)=> <SelectButton macro={macro} handleSelect={hFunc}/>)}</div>
-    </div>
-  )
+    if(macros.length>0){
+      return(
+        <div id={typeStr} className={"select-type-wrapper"}>
+          <h5>{typeStr}</h5>
+          <div className={"select-wrapper"}>{macros.map((macro)=> <SelectButton macro={macro} handleSelect={hFunc}/>)}</div>
+        </div>
+      )
+    } else{
+      return;
+    }
 }
 
 /*const renderSubworkflowBranch = (subworkflow, hFunc, currentId) => {
