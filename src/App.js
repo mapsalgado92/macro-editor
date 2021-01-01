@@ -81,7 +81,7 @@ class App extends React.Component {
     return(
     <div className="App">
       <div id="macro-selector">
-        <div id="title-wrapper">Macro Selector{" - " + this.state.language}</div>
+        <div id="title-wrapper">Macro Selector & Editor {" - " + this.state.language}</div>
         <div id="lang-selector">
           <button className="lang-button" onClick={()=>this.handleChangeLanguage("ES")}>ES</button>
           <button className="lang-button" onClick={()=>this.handleChangeLanguage("PT")}>PT</button>
