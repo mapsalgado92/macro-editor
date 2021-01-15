@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/macro-editor/static/css/main.e36d6101.chunk.css",
-    "main.js": "/macro-editor/static/js/main.e68c8a85.chunk.js",
-    "main.js.map": "/macro-editor/static/js/main.e68c8a85.chunk.js.map",
+    "main.js": "/macro-editor/static/js/main.edf89280.chunk.js",
+    "main.js.map": "/macro-editor/static/js/main.edf89280.chunk.js.map",
     "runtime-main.js": "/macro-editor/static/js/runtime-main.3ccbfd5c.js",
     "runtime-main.js.map": "/macro-editor/static/js/runtime-main.3ccbfd5c.js.map",
     "static/js/2.64751c02.chunk.js": "/macro-editor/static/js/2.64751c02.chunk.js",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.3ccbfd5c.js",
     "static/js/2.64751c02.chunk.js",
     "static/css/main.e36d6101.chunk.css",
-    "static/js/main.e68c8a85.chunk.js"
+    "static/js/main.edf89280.chunk.js"
   ]
 }
