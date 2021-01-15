@@ -7,6 +7,7 @@ import * as macrosEN from './macrosEN.js';
 import * as macrosDE from './macrosDE.js';
 import * as macrosFR from './macrosFR.js';
 import {CopyToClipboard} from 'react-copy-to-clipboard';
+import ReactCountryFlag from "react-country-flag"
 
 class App extends React.Component {
   constructor(props){
@@ -51,7 +52,7 @@ class App extends React.Component {
           ppn: macrosES.macrosPpn
         };
         break;
-      case "EN":
+      case "GB":
         newMacros = {
           general: macrosEN.macrosGen,
           poo: [],
@@ -81,11 +82,11 @@ class App extends React.Component {
     return(
     <div className="App">
       <div id="macro-selector">
-        <div id="title-wrapper">Macro Selector & Editor {" - " + this.state.language}</div>
+        <div id="title-wrapper">Macro Selector & Editor <ReactCountryFlag svg countryCode={this.state.language}/></div>
         <div id="lang-selector">
           <button className="lang-button" onClick={()=>this.handleChangeLanguage("ES")}>ES</button>
           <button className="lang-button" onClick={()=>this.handleChangeLanguage("PT")}>PT</button>
-          <button className="lang-button" onClick={()=>this.handleChangeLanguage("EN")}>EN</button>
+          <button className="lang-button" onClick={()=>this.handleChangeLanguage("GB")}>EN</button>
           <button className="lang-button" onClick={()=>this.handleChangeLanguage("DE")}>DE</button>
           <button className="lang-button" onClick={()=>this.handleChangeLanguage("FR")}>FR</button>
         </div>
