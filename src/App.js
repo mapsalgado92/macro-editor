@@ -120,13 +120,6 @@ const renderMacros = (typeStr, macros, hFunc) => {
     }
 }
 
-/*const renderSubworkflowBranch = (subworkflow, hFunc, currentId) => {
-  return (
-    <div>
-      {subworkflow.branch.map((branch, index) => <Branch id={"b" + index} condition={branch.condition} targetId={branch.targetId} currentId={currentId} handleBranch={hFunc}/>)}
-    </div>
-  )
-}*/
 console.log("What an awsome editor")
 
 export default App;
